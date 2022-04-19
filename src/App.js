@@ -1,23 +1,22 @@
-import './App.css';
+import Wave from "react-wavify";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="" className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1 style={{ textAlign: "center" }}>Animação de Onda em React</h1>
+
+      <Wave
+        fill="#1277b0"
+        paused={false}
+        options={{
+          height: 70,
+          amplitude: 45,
+          speed: 0.25,
+          points: 6
+        }}
+      />
+    </>
   );
 }
 
